@@ -32,7 +32,7 @@ def function2(arr):
     expected_sum = (n * (n + 1)) // 2
     actual_sum = sum(arr)
     return actual_sum - expected_sum - 1
-# print(function1([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+# print(function1([0, 1, 2, 3, 4, 5, 7, 8, 9, 10]))
 
 
 sizes = [1000, 10000, 1000000]
