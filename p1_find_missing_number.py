@@ -21,7 +21,7 @@ def function1(arr):
     total = (len(arr) + 1) * len(arr) / 2
     # print("missing number is: " + str(sum - total) + " at index " + str(idx))
     return (total - sum - 1)
-# print(function1([0, 1, 2, 3, 4, 5, 7, 8, 9, 10]))
+print(function1([0, 1, 2, 3, 4, 5, 7, 8, 9, 10]))
 
 
 # Problem: find missing number 
@@ -32,7 +32,7 @@ def function2(arr):
     expected_sum = (n * (n + 1)) // 2
     actual_sum = sum(arr)
     return expected_sum - actual_sum
-# print(function2([0, 1, 2, 3, 4, 5, 7, 8, 9, 10]))
+print(function2([0, 1, 2, 3, 4, 5, 7, 8, 9, 10]))
 
 
 sizes = [1000, 10000, 1000000]
