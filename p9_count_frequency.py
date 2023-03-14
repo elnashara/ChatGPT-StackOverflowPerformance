@@ -34,38 +34,38 @@ def function2(my_list):
 
 print(function2([5, 1, 2, 2, 4, 3, 1, 2, 3, 1, 1, 5, 2]))
 
-# sizes = [1000, 10000, 1000000]
-# versions = 100
+sizes = [1000, 10000, 1000000]
+versions = 100
 
-# with open('p9_execution_times.csv', mode='a', newline='') as file:
-#     writer = csv.writer(file)
-#     writer.writerow(['Size', 'Function', 'Min', 'Max', 'Average'])
+with open('p9_execution_times.csv', mode='a', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(['Size', 'Function', 'Min', 'Max', 'Average'])
     
-#     for size in sizes:
-#         times1 = []
-#         times2 = []
-#         print(f"Testing for list size {size}")
-#         for i in range(versions):
-#             lst = [random.randint(0, 1000000) for _ in range(size)]
+    for size in sizes:
+        times1 = []
+        times2 = []
+        print(f"Testing for list size {size}")
+        for i in range(versions):
+            lst = [random.randint(0, 1000000) for _ in range(size)]
             
-#             if i % 2 == 0:
-#                 time1 = timeit.timeit(lambda: function1(lst), number=100)
-#                 time2 = timeit.timeit(lambda: function2(lst), number=100)
-#                 times1.append(time1)
-#                 times2.append(time2)
-#             else:
-#                 time2 = timeit.timeit(lambda: function2(lst), number=100)
-#                 time1 = timeit.timeit(lambda: function1(lst), number=100)
-#                 times1.append(time1)
-#                 times2.append(time2)
+            if i % 2 == 0:
+                time1 = timeit.timeit(lambda: function1(lst), number=100)
+                time2 = timeit.timeit(lambda: function2(lst), number=100)
+                times1.append(time1)
+                times2.append(time2)
+            else:
+                time2 = timeit.timeit(lambda: function2(lst), number=100)
+                time1 = timeit.timeit(lambda: function1(lst), number=100)
+                times1.append(time1)
+                times2.append(time2)
 
-#         min_time1 = min(times1)
-#         max_time1 = max(times1)
-#         avg_time1 = statistics.mean(times1)
+        min_time1 = min(times1)
+        max_time1 = max(times1)
+        avg_time1 = statistics.mean(times1)
 
-#         min_time2 = min(times2)
-#         max_time2 = max(times2)
-#         avg_time2 = statistics.mean(times2)
+        min_time2 = min(times2)
+        max_time2 = max(times2)
+        avg_time2 = statistics.mean(times2)
 
-#         writer.writerow([size, 'P9_human', min_time1, max_time1, avg_time1])
-#         writer.writerow([size, 'P9_chatgpt', min_time2, max_time2, avg_time2])
+        writer.writerow([size, 'P9_human', min_time1, max_time1, avg_time1])
+        writer.writerow([size, 'P9_chatgpt', min_time2, max_time2, avg_time2])
