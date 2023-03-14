@@ -32,10 +32,6 @@ def function2(my_list):
             counts[elem] = 1
     return counts
 
-# # Print the counts
-# for elem, count in counts.items():
-#     print(elem, count)
-
 print(function2([5, 1, 2, 2, 4, 3, 1, 2, 3, 1, 1, 5, 2]))
 
 # sizes = [1000, 10000, 1000000]
