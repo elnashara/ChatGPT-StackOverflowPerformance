@@ -12,7 +12,7 @@ import csv
 import collections
 def function1(array):
     return([item for item, count in collections.Counter(array).items() if count > 1])
-# print(function1([1,2,3,2,1,5,6,5,5,5]))
+print(function1([1,2,3,2,1,5,6,5,5,5]))
 
 
 # Problem: Find the duplicates in a list
@@ -22,7 +22,7 @@ def function2(nums):
     seen = set()
     duplicates = [num for num in nums if num in seen or seen.add(num)]
     return duplicates
-# print(function2([1,2,3,2,1,5,6,5,5,5]))
+print(function2([1,2,3,2,1,5,6,5,5,5]))
 
 
 sizes = [1000, 10000, 1000000]
