@@ -20,8 +20,8 @@ print(function1([21, 4, 1, 3, 9, 20, 25, 6, 21, 14]))
 def function2(my_list):
     reversed_list = my_list[::-1]
     return (reversed_list)
-
 print(function2([21, 4, 1, 3, 9, 20, 25, 6, 21, 14]))
+
 
 sizes = [1000, 10000, 1000000]
 versions = 100

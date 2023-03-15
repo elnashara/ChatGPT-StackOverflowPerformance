@@ -3,41 +3,32 @@ import statistics
 import timeit
 import csv
 
-# Problem: Count frequency
+# Problem: Removing duplicates in lists
 # Source: Stack Overflow
-# Title: "How to count the frequency of the elements in an unordered list?"
-# URL: https://stackoverflow.com/questions/2161752/how-to-count-the-frequency-of-the-elements-in-an-unordered-list
-# Voted Answer: 634
-# Date Posted: Jan 29,2010
-import collections
-def function1(a):
-    return(collections.Counter(a))
-print(function1([5, 1, 2, 2, 4, 3, 1, 2, 3, 1, 1, 5, 2]))
+# Title: "Removing duplicates in lists"
+# URL: https://stackoverflow.com/questions/7961363/removing-duplicates-in-lists
+# Voted Answer: 2177
+# Date Posted: Nov 1,2011
+def function1(t):
+    return(list(set(t)))
+print(function1([1, 2, 3, 1, 2, 3, 5, 6, 7, 8]))
 
 
-# Problem: reverse a list
+# Problem: Removing duplicates in lists
 # Source: ChatGPT
-# prompt : "How to count the frequency of the elements in an unordered list?"
+# prompt : "Removing duplicates in lists"
 def function2(my_list):
-    # Create an empty dictionary to store the counts
-    counts = {}
-    
-    # Loop over the elements in the list
-    for elem in my_list:
-        # If the element is already in the dictionary, increment its count
-        if elem in counts:
-            counts[elem] += 1
-        # If the element is not in the dictionary, add it with a count of 1
-        else:
-            counts[elem] = 1
-    return counts
-print(function2([5, 1, 2, 2, 4, 3, 1, 2, 3, 1, 1, 5, 2]))
-
+    unique_list = []
+    for x in my_list:
+        if x not in unique_list:
+            unique_list.append(x)
+    return unique_list
+print(function2([1, 2, 3, 1, 2, 3, 5, 6, 7, 8]))
 
 sizes = [1000, 10000, 1000000]
 versions = 100
 
-with open('p9_execution_times.csv', mode='a', newline='') as file:
+with open('p6_execution_times.csv', mode='a', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['Size', 'Function', 'Min', 'Max', 'Average'])
     
@@ -67,5 +58,5 @@ with open('p9_execution_times.csv', mode='a', newline='') as file:
         max_time2 = max(times2)
         avg_time2 = statistics.mean(times2)
 
-        writer.writerow([size, 'P9_human', min_time1, max_time1, avg_time1])
-        writer.writerow([size, 'P9_chatgpt', min_time2, max_time2, avg_time2])
+        writer.writerow([size, 'P6_human', min_time1, max_time1, avg_time1])
+        writer.writerow([size, 'P6_chatgpt', min_time2, max_time2, avg_time2])

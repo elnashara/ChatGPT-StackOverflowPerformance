@@ -24,7 +24,7 @@ def function1(array, sum):
             seen_values[value] += 1
     
     return pairs_count
-# print(function1([12, 11, 0, 35, 16, 17, 23, 21, 5], 23))
+print(function1([12, 11, 0, 35, 16, 17, 23, 21, 5], 23))
 
 
 # Problem: count pairs with given sum
@@ -42,13 +42,12 @@ def function2(nums, target_sum):
         else:
             complements[complement] = 1
     return count
-# print(function2([12, 11, 0, 35, 16, 17, 23, 21, 5], 23))
+print(function2([12, 11, 0, 35, 16, 17, 23, 21, 5], 23))
 
 
 sizes = [1000, 10000, 1000000]
 versions = 100
-
-with open('execution_times.csv', mode='a', newline='') as file:
+with open('p4_execution_times.csv', mode='a', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['Size', 'Function', 'Min', 'Max', 'Average'])
     

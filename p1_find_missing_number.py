@@ -38,7 +38,7 @@ print(function2([0, 1, 2, 3, 4, 5, 7, 8, 9, 10]))
 sizes = [1000, 10000, 1000000]
 versions = 100
 
-with open('execution_times.csv', mode='a', newline='') as file:
+with open('p1_execution_times.csv', mode='a', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['Size', 'Function', 'Min', 'Max', 'Average'])
     
@@ -52,7 +52,7 @@ with open('execution_times.csv', mode='a', newline='') as file:
             # Select a random index to remove one number from the list
             missing_index = random.randint(i, len(lst)-1)
             # Remove the number at the selected index
-            lst.pop(missing_index)     
+            lst.pop(missing_index)
             # Randomly reorder the list
             lst = random.sample(lst, len(lst))
 

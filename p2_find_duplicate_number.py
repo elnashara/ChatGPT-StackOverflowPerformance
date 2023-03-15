@@ -12,7 +12,7 @@ import csv
 def function1(arr):
     n = len(arr) - 1                     # Get n as length of list - 1
     return sum(arr) - (n * (n + 1) / 2)  # n*(n+1)/2 is the sum of integers from 1 to n
-# print(function1([1,2,3,4,4,5,6,7,8,9]))
+print(function1([1,2,3,4,4,5,6,7,8,9]))
 
 
 # Problem: find duplicate
@@ -32,13 +32,13 @@ def function2(nums):
         fast = nums[fast]
     
     return slow
-# print(function2([1,2,3,4,4,5,6,7,8,9]))
+print(function2([1,2,3,4,4,5,6,7,8,9]))
 
 
 sizes = [1000, 10000, 1000000]
 versions = 100
 
-with open('execution_times.csv', mode='a', newline='') as file:
+with open('p2_execution_times.csv', mode='a', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['Size', 'Function', 'Min', 'Max', 'Average'])
     
