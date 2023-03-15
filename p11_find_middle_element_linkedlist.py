@@ -16,10 +16,25 @@ class Node:
 # Date Posted: Jun 2,2018
 def function1(head, count=0):
     yield head
-    if not head._next:
+    if not head.next:
       yield [count]
     else: 
-      yield from head._next.function1(count+1)
+      yield from function1(head.next, count+1)
+
+
+# Create a linked list with 100 random unsorted numbers with range 1 to 200
+list=[]
+head = Node(random.randint(1, 200))
+current = head
+for i in range(10):
+    current.next = Node(random.randint(1, 200))
+    list.append(current.val)
+    current = current.next
+
+*l, [count] = function1(head)
+print(f'full list: {list}')
+print('middle value:', list[count//2])
+
 
 # Problem: Find middle element linkedlist
 # Source: ChatGPT
@@ -31,8 +46,12 @@ def function2(head):
     while fast and fast.next:
         slow = slow.next
         fast = fast.next.next
-        
     return slow.val
+
+result = function2(head)
+print(f'full list: {list}')
+print('middle value:', result)
+
 
 sizes = [1000, 10000, 1000000]
 versions = 100
