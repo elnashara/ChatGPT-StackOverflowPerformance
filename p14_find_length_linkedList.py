@@ -22,7 +22,15 @@ def function1(head):
         count+=1
         temp=temp.next
     return count
-    
+
+# Generate a linked list with 10 random numbers with a range of 1 to 200
+head = Node(random.randint(1, 200))
+current = head
+for i in range(10):
+    current.next = Node(random.randint(1, 200))
+    current = current.next
+
+print(function1(head))    
 
 # Problem: Find the length of linked list
 # Source: ChatGPT
@@ -37,6 +45,7 @@ def function2(head):
         
     return count
 
+print(function2(head))    
 
 sizes = [1000, 10000, 1000000]
 versions = 100

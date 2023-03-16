@@ -31,6 +31,22 @@ def function1(first):
         if slow == fast:
             return True
 
+# Generate a linked list with 100 random numbers with a range of 1 to 200
+head = Node(random.randint(1, 200))
+current = head
+for i in range(100):
+    current.next = Node(random.randint(1, 200))
+    current = current.next
+
+# Create a loop in the linked list (connect the last node to a random node)
+last_node = current
+random_node = head
+for i in range(random.randint(1, 100)):
+    random_node = random_node.next
+last_node.next = random_node
+
+print(function1(head))
+
 
 # Problem: Detect loop in a Linked List
 # Source: ChatGPT
@@ -46,6 +62,8 @@ def function2(head):
         if slow == fast:
             return True
     return False
+
+print(function2(head))
 
 
 sizes = [1000, 10000, 1000000]

@@ -8,7 +8,7 @@ class Node:
         self.val = val
         self.next = None
 
-# Problem: Reversing a linked list
+# Problem: Reversing a linked list 
 # Source: Stack Overflow
 # Title: "Reversing a linked list in python"
 # URL: https://stackoverflow.com/questions/21529359/reversing-a-linked-list-in-python
@@ -19,6 +19,28 @@ def function1(head):
     while head:
         head.next, head, new_head = new_head, head.next, head # look Ma, no temp vars!
     return new_head
+
+
+# Generate a linked list with 10 random numbers with a range of 1 to 200
+head = Node(random.randint(1, 200))
+current = head
+for i in range(10):
+    current.next = Node(random.randint(1, 200))
+    current = current.next
+
+current_node = head
+# print original liked list
+while current_node is not None:
+    print(current_node.val, end=" ")
+    current_node = current_node.next
+
+head_fun1_rev = function1(head)
+print('')
+# print reversed liked list
+current_node = head_fun1_rev
+while current_node is not None:
+    print(current_node.val, end=" ")
+    current_node = current_node.next
 
 
 # Problem: Reversing a linked list
@@ -35,6 +57,28 @@ def function2(head):
         curr = next_node
     return prev
 
+print('')
+print('')
+# Generate a linked list with 10 random numbers with a range of 1 to 200
+head = Node(random.randint(1, 200))
+current = head
+for i in range(10):
+    current.next = Node(random.randint(1, 200))
+    current = current.next
+    
+current_node = head
+# print original liked list
+while current_node is not None:
+    print(current_node.val, end=" ")
+    current_node = current_node.next
+
+head_fun2_rev = function2(head)
+print('')
+# print reversed liked list
+current_node = head_fun2_rev
+while current_node is not None:
+    print(current_node.val, end=" ")
+    current_node = current_node.next
 
 sizes = [1000, 10000, 1000000]
 versions = 100
