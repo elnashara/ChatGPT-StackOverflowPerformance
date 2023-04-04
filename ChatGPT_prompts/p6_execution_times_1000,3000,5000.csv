@@ -1,0 +1,10 @@
+Size,Function,Min,Max,Average
+1000,p6_removingduplicates_strategy_chatgpt_prompts1,0.2120985,0.2231568,0.215806368
+1000,p7_removingduplicates_strategy_chatgpt_prompts2,0.0012291,0.0017087,0.001332499
+1000,p7_removingduplicates_strategy_chatgpt_prompts3,0.0062701,0.0074239,0.006663864
+3000,p7_removingduplicates_strategy_chatgpt_prompts1,1.8938473,1.9616872,1.91688883
+3000,p7_removingduplicates_strategy_chatgpt_prompts2,0.0064261,0.0081975,0.006973073
+3000,p7_removingduplicates_strategy_chatgpt_prompts3,0.0198218,0.0233118,0.020634742
+5000,p7_removingduplicates_strategy_chatgpt_prompts1,5.216266,5.3256896,5.266031773
+5000,p7_removingduplicates_strategy_chatgpt_prompts2,0.0173625,0.0201104,0.018729738
+5000,p7_removingduplicates_strategy_chatgpt_prompts3,0.0312883,0.0334104,0.032301398

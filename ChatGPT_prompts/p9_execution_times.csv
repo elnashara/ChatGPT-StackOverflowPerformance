@@ -1,0 +1,10 @@
+Size,Function,Min,Max,Average
+1000,p9_countfrequency_strategy_chatgpt_prompts1,0.0044035,0.0052112,0.00463729
+1000,p9_countfrequency_strategy_chatgpt_prompts2,0.0024487,0.003248,0.002615795
+1000,p9_countfrequency_strategy_chatgpt_prompts3,0.0085859,0.0101829,0.008976681
+10000,p9_countfrequency_strategy_chatgpt_prompts1,0.0472831,0.0514239,0.049004459
+10000,p9_countfrequency_strategy_chatgpt_prompts2,0.0284206,0.0310762,0.029668502
+10000,p9_countfrequency_strategy_chatgpt_prompts3,0.0899469,0.0952684,0.091942899
+1000000,p9_countfrequency_strategy_chatgpt_prompts1,11.0759465,13.6250284,11.5207936
+1000000,p9_countfrequency_strategy_chatgpt_prompts2,8.3469905,9.200609,8.66592511
+1000000,p9_countfrequency_strategy_chatgpt_prompts3,13.3269079,15.4985376,13.73874573

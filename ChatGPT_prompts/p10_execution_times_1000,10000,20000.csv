@@ -1,0 +1,10 @@
+Size,Function,Min,Max,Average
+1000,p10_maximum_product_subarray_strategy_chatgpt_prompts1,0.0749772,0.0844294,0.07736557
+1000,p10_maximum_product_subarray_strategy_chatgpt_prompts2,0.0450584,0.053266,0.046985411
+1000,p10_maximum_product_subarray_strategy_chatgpt_prompts3,0.0464807,0.0548471,0.048577529
+10000,p10_maximum_product_subarray_strategy_chatgpt_prompts1,4.6085338,4.9385957,4.699107534
+10000,p10_maximum_product_subarray_strategy_chatgpt_prompts2,2.3626369,2.546582,2.410314308
+10000,p10_maximum_product_subarray_strategy_chatgpt_prompts3,2.3703486,2.6873826,2.43304035
+20000,p10_maximum_product_subarray_strategy_chatgpt_prompts1,13.0628416,18.5202506,17.94697818
+20000,p10_maximum_product_subarray_strategy_chatgpt_prompts2,6.6743339,9.4471175,9.121543486
+20000,p10_maximum_product_subarray_strategy_chatgpt_prompts3,6.7219575,9.3573399,9.153589348

@@ -1,0 +1,10 @@
+Size,Function,Min,Max,Average
+100,p15_pascal_triangle_strategy_chatgpt_prompts1,0.0277205,0.0301939,0.028853168
+100,p15_pascal_triangle_strategy_chatgpt_prompts2,0.0373532,0.0394582,0.038468369
+100,p15_pascal_triangle_strategy_chatgpt_prompts3,0.040824,0.0432641,0.041983812
+200,p15_pascal_triangle_strategy_chatgpt_prompts1,0.1160554,0.1229188,0.11965024
+200,p15_pascal_triangle_strategy_chatgpt_prompts2,0.1557711,0.1628879,0.159083556
+200,p15_pascal_triangle_strategy_chatgpt_prompts3,0.1709783,0.1772864,0.173931714
+300,p15_pascal_triangle_strategy_chatgpt_prompts1,0.2832627,0.3017619,0.290750897
+300,p15_pascal_triangle_strategy_chatgpt_prompts2,0.3814352,0.4015809,0.390431456
+300,p15_pascal_triangle_strategy_chatgpt_prompts3,0.4134608,0.4365013,0.426435995
