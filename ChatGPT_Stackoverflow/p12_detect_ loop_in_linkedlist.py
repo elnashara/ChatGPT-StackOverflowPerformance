@@ -3,18 +3,21 @@ import statistics
 import timeit
 import csv
 
-class Node:
-    def __init__(self, val):
-        self.val = val
-        self.next = None
-
-# Problem: Detect loop in a Linked List
+#**************************************************************
+# Problem p12: Detect loop in a Linked List
 # Source: Stack Overflow
 # Title: "How to detect a loop in a linked list?"
 # URL: https://stackoverflow.com/questions/2663115/how-to-detect-a-loop-in-a-linked-list
 # Voted Answer: 595
 # Date Posted: Apr 18,2010
 # The code on the StackOverflow website was originally written in Java, but I converted it to Python.
+#**************************************************************
+class Node:
+    def __init__(self, val):
+        self.val = val
+        self.next = None
+
+#**************************************************************
 def function1(first):
     if first is None:
         return False
@@ -47,8 +50,8 @@ last_node.next = random_node
 
 print(function1(head))
 
-
-# Problem: Detect loop in a Linked List
+#**************************************************************
+# Problem p12: Detect loop in a Linked List
 # Source: ChatGPT
 # prompt : "How to detect a loop in a linked list?"
 def function2(head):
@@ -65,7 +68,7 @@ def function2(head):
 
 print(function2(head))
 
-
+#**************************************************************
 sizes = [1000, 10000, 1000000]
 versions = 100
 

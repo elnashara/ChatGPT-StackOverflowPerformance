@@ -3,12 +3,14 @@ import statistics
 import timeit
 import csv
 
-# Problem: find n smallest indices
+#**************************************************************
+# Problem P3: find n smallest indices
 # Source: Stack Overflow
 # Title: "Python algorithm to find the indexes of the k smallest number in an unsorted array?"
 # URL: https://stackoverflow.com/questions/55183783/python-algorithm-to-find-the-indexes-of-the-k-smallest-number-in-an-unsorted-arr
 # Voted Answer: 1
 # Date Posted: Mar 15,2019
+#**************************************************************
 from heapq import nsmallest
 from operator import itemgetter
 def function1(seq, n):
@@ -16,10 +18,11 @@ def function1(seq, n):
     return [i for i, x in smallest_with_indices]
 print(function1([12, 11, 0, 35, 16, 17, 23, 21, 5], 3))
 
-
-# Problem: find n smallest indices
+#**************************************************************
+# Problem P3: find n smallest indices
 # Source: ChatGPT
 # prompt : "Python algorithm to find the indexes of the k smallest number in an unsorted array?"
+#**************************************************************
 def function2(arr, k):
     # Create a dictionary to store the index of each element in the array
     index_dict = {}
@@ -37,7 +40,7 @@ def function2(arr, k):
     return indexes
 print(function2([12, 11, 0, 35, 16, 17, 23, 21, 5], 3))
 
-
+#**************************************************************
 sizes = [1000, 10000, 1000000]
 versions = 100
 with open('p3_execution_times.csv', mode='a', newline='') as file:

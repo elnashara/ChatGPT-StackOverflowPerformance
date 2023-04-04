@@ -3,28 +3,34 @@ import statistics
 import timeit
 import csv
 
-# Problem: Removing duplicates
+#**************************************************************
+# Problem p6: Removing duplicates
 # Source: Stack Overflow
 # Title: "Removing duplicates in lists"
 # URL: https://stackoverflow.com/questions/7961363/removing-duplicates-in-lists
 # Voted Answer: 2177
 # Date Posted: Nov 1,2011
+#**************************************************************
 def function1(t):
     return(list(set(t)))
+
 print(function1([1, 2, 3, 1, 2, 3, 5, 6, 7, 8]))
 
-
-# Problem: Removing duplicates
+#**************************************************************
+# Problem p6: Removing duplicates
 # Source: ChatGPT
 # prompt : "Removing duplicates in lists"
+#**************************************************************
 def function2(my_list):
     unique_list = []
     for x in my_list:
         if x not in unique_list:
             unique_list.append(x)
     return unique_list
+
 print(function2([1, 2, 3, 1, 2, 3, 5, 6, 7, 8]))
 
+#**************************************************************
 sizes = [1000, 3000, 5000]
 versions = 100
 

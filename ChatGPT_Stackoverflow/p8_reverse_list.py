@@ -3,26 +3,31 @@ import statistics
 import timeit
 import csv
 
-# Problem: reverse a list
+#**************************************************************
+# Problem p8: reverse a list
 # Source: Stack Overflow
 # Title: "How do I reverse a list or loop over it backwards?"
 # URL: https://stackoverflow.com/questions/3940128/how-do-i-reverse-a-list-or-loop-over-it-backwards
 # Voted Answer: 1621
 # Date Posted: Oct 15,2010
+#**************************************************************
 def function1(xs):
     return(list(reversed(xs)))
+
 print(function1([21, 4, 1, 3, 9, 20, 25, 6, 21, 14]))
 
-
-# Problem: reverse a list
+#**************************************************************
+# Problem p8: reverse a list
 # Source: ChatGPT
 # prompt : "How do I reverse a list or loop over it backwards?"
+#**************************************************************
 def function2(my_list):
     reversed_list = my_list[::-1]
     return (reversed_list)
+
 print(function2([21, 4, 1, 3, 9, 20, 25, 6, 21, 14]))
 
-
+#**************************************************************
 sizes = [1000, 10000, 1000000]
 versions = 100
 

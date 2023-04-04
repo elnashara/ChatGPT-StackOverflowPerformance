@@ -3,12 +3,14 @@ import statistics
 import timeit
 import csv
 
-# Problem: count pairs with given sum
+#**************************************************************
+# Problem P4: count pairs with given sum
 # Source: Stack Overflow
 # Title: "Count pairs of elements in an array whose sum equals a given sum (but) do it in a single iteration(!)"
 # URL: https://stackoverflow.com/questions/64727140/count-pairs-of-elements-in-an-array-whose-sum-equals-a-given-sum-but-do-it-in
 # Voted Answer: 1
 # Date Posted: Nov 7,2020
+#**************************************************************
 from collections import defaultdict
 def function1(array, sum):
     pairs_count = 0
@@ -26,10 +28,11 @@ def function1(array, sum):
     return pairs_count
 print(function1([12, 11, 0, 35, 16, 17, 23, 21, 5], 23))
 
-
-# Problem: count pairs with given sum
+#**************************************************************
+# Problem P4: count pairs with given sum
 # Source: ChatGPT
 # prompt : "Count pairs of elements in an array whose sum equals a given sum (but) do it in a single iteration(!)"
+#**************************************************************
 def function2(nums, target_sum):
     count = 0
     complements = {}
@@ -44,7 +47,7 @@ def function2(nums, target_sum):
     return count
 print(function2([12, 11, 0, 35, 16, 17, 23, 21, 5], 23))
 
-
+#**************************************************************
 sizes = [1000, 10000, 1000000]
 versions = 100
 with open('p4_execution_times.csv', mode='a', newline='') as file:

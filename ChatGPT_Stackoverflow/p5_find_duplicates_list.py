@@ -3,28 +3,33 @@ import statistics
 import timeit
 import csv
 
-# Problem: Find the duplicates in a list
+#**************************************************************
+# Problem p5: Find the duplicates in a list
 # Source: Stack Overflow
 # Title: "How do I find the duplicates in a list and create another list with them?"
 # URL: https://stackoverflow.com/questions/9835762/how-do-i-find-the-duplicates-in-a-list-and-create-another-list-with-them
 # Voted Answer: 890
 # Date Posted: Mar 23,2012
+#**************************************************************
 import collections
 def function1(array):
     return([item for item, count in collections.Counter(array).items() if count > 1])
+
 print(function1([1,2,3,2,1,5,6,5,5,5]))
 
-
-# Problem: Find the duplicates in a list
+#**************************************************************
+# Problem p5: Find the duplicates in a list
 # Source: ChatGPT
 # prompt : "How do I find the duplicates in a list and create another list with them?"
+#**************************************************************
 def function2(nums):
     seen = set()
     duplicates = [num for num in nums if num in seen or seen.add(num)]
     return duplicates
+
 print(function2([1,2,3,2,1,5,6,5,5,5]))
 
-
+#**************************************************************
 sizes = [1000, 10000, 1000000]
 versions = 100
 

@@ -3,12 +3,14 @@ import statistics
 import timeit
 import csv
 
-# Problem: pascal triangle
+#**************************************************************
+# Problem p15: pascal triangle
 # Source: Stack Overflow
 # Title: "Pascal's Triangle for Python"
 # URL: https://stackoverflow.com/questions/24093387/pascals-triangle-for-python
 # Voted Answer: 28
 # Date Posted: Jul 10,2015
+#**************************************************************
 import math
 # pascals_tri_formula = [] # don't collect in a global variable.
 def combination(n, r): # correct calculation of combinations, n choose k
@@ -34,11 +36,11 @@ def function1(rows):
 for row in function1(5):
     print(row)
 
-    
-
+#**************************************************************
 # Problem: pascal triangle
 # Source: ChatGPT
 # prompt : "Pascal's Triangle for Python"
+#**************************************************************
 def function2(num_rows):
     triangle = [[1]]
     
@@ -56,8 +58,7 @@ def function2(num_rows):
 for row in function2(5):
     print(row)
 
-
-
+#**************************************************************
 sizes = [100, 200, 300]
 
 with open('p15_execution_times.csv', mode='a', newline='') as file:

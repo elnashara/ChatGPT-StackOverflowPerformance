@@ -3,18 +3,20 @@ import statistics
 import timeit
 import csv
 
-class Node:
-    def __init__(self, val):
-        self.val = val
-        self.next = None
-
-
-# Problem: Find the length of linked list
+#**************************************************************
+# Problem p14: Find the length of linked list
 # Source: Stack Overflow
 # Title: "Finding the length of a linked list in python"
 # URL: https://stackoverflow.com/questions/21529359/reversing-a-linked-list-in-python
 # Voted Answer: 5
 # Date Posted: Jul 10,2015
+#**************************************************************
+class Node:
+    def __init__(self, val):
+        self.val = val
+        self.next = None
+
+#**************************************************************
 def function1(head):
     temp=head
     count=0
@@ -32,9 +34,11 @@ for i in range(10):
 
 print(function1(head))    
 
-# Problem: Find the length of linked list
+#**************************************************************
+# Problem p14: Find the length of linked list
 # Source: ChatGPT
 # prompt : "Finding the length of a linked list in python"
+#**************************************************************
 def function2(head):
     count = 0
     current = head
@@ -47,6 +51,7 @@ def function2(head):
 
 print(function2(head))    
 
+#**************************************************************
 sizes = [1000, 10000, 1000000]
 versions = 100
 

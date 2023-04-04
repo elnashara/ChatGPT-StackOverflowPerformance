@@ -3,12 +3,14 @@ import statistics
 import timeit
 import csv
 
-# Problem: Quicksort
+#**************************************************************
+# Problem p7: Quicksort
 # Source: Stack Overflow
 # Title: "Quicksort with Python"
 # URL: https://stackoverflow.com/questions/18262306/quicksort-with-python
 # Voted Answer: 316
 # Date Posted: Aug 15,2013
+#**************************************************************
 def function1(array):
     """Sort the array by using quicksort."""
 
@@ -30,12 +32,14 @@ def function1(array):
     # Note that you want equal ^^^^^ not pivot
     else:  # You need to handle the part at the end of the recursion - when you only have one element in your array, just return the array.
         return array
+
 print(function1([21, 4, 1, 3, 9, 20, 25, 6, 21, 14]))
 
-
-# Problem: Quicksort
+#**************************************************************
+# Problem p7: Quicksort
 # Source: ChatGPT
 # prompt : "Quicksort with Python"
+#**************************************************************
 def function2(arr):
     if len(arr) <= 1:
         return arr
@@ -46,9 +50,10 @@ def function2(arr):
     right = [x for x in arr if x > pivot]
 
     return function2(left) + middle + function2(right)
+
 print(function2([21, 4, 1, 3, 9, 20, 25, 6, 21, 14]))
 
-
+#**************************************************************
 sizes = [1000, 3000, 5000]
 versions = 100
 

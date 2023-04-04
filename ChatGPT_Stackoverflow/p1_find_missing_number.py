@@ -3,12 +3,14 @@ import statistics
 import timeit
 import csv
 
-# Problem: find missing number 
+#**************************************************************
+# Problem P1: find missing number 
 # Source: Stack Overflow
 # Title: "Quickest way to find missing number in an array of numbers"
 # URL: https://stackoverflow.com/questions/2113795/quickest-way-to-find-missing-number-in-an-array-of-numbers
 # Voted Answer: 152
 # Date Posted: Oct 16,2012
+#**************************************************************
 def function1(arr):
     sum = 0
     idx = -1
@@ -22,19 +24,18 @@ def function1(arr):
     # print("missing number is: " + str(sum - total) + " at index " + str(idx))
     return (total - sum - 1)
 print(function1([0, 1, 2, 3, 4, 5, 7, 8, 9, 10]))
-
-
-# Problem: find missing number 
+#**************************************************************
+# Problem P1: find missing number 
 # Source: ChatGPT
 # prompt : "Quickest way to find missing number in an array of numbers"
+#**************************************************************
 def function2(arr):
     n = len(arr)
     expected_sum = (n * (n + 1)) // 2
     actual_sum = sum(arr)
     return expected_sum - actual_sum
 print(function2([0, 1, 2, 3, 4, 5, 7, 8, 9, 10]))
-
-
+#**************************************************************
 sizes = [1000, 10000, 1000000]
 versions = 100
 

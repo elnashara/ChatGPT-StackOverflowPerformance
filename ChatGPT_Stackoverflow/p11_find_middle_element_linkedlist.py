@@ -3,24 +3,26 @@ import statistics
 import timeit
 import csv
 
-class Node:
-    def __init__(self, val):
-        self.val = val
-        self.next = None
-
+#**************************************************************
 # Problem: Find middle element linkedlist
 # Source: Stack Overflow
 # Title: "How to find middle element in a python linked list in a single traversal?"
 # URL: https://stackoverflow.com/questions/50656320/how-to-find-middle-element-in-a-python-linked-list-in-a-single-traversal
 # Voted Answer: 2
 # Date Posted: Jun 2,2018
+#**************************************************************
+class Node:
+    def __init__(self, val):
+        self.val = val
+        self.next = None
+
+#**************************************************************
 def function1(head, count=0):
     yield head
     if not head.next:
       yield [count]
     else: 
       yield from function1(head.next, count+1)
-
 
 # Create a linked list with 100 random unsorted numbers with range 1 to 200
 list=[]
@@ -35,10 +37,11 @@ for i in range(10):
 print(f'full list: {list}')
 print('middle value:', list[count//2])
 
-
+#**************************************************************
 # Problem: Find middle element linkedlist
 # Source: ChatGPT
 # prompt : "How to find middle element in a python linked list in a single traversal?"
+#**************************************************************
 def function2(head):
     slow = head
     fast = head
@@ -52,7 +55,7 @@ result = function2(head)
 print(f'full list: {list}')
 print('middle value:', result)
 
-
+#**************************************************************
 sizes = [1000, 10000, 1000000]
 versions = 100
 

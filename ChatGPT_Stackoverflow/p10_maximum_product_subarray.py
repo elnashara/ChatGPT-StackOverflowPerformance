@@ -3,12 +3,14 @@ import statistics
 import timeit
 import csv
 
-# Problem: maximum product subarray
+#**************************************************************
+# Problem p10: maximum product subarray
 # Source: Stack Overflow
 # Title: "Maximum Product Subarray"
 # URL: https://stackoverflow.com/questions/25590930/maximum-product-subarray
 # Voted Answer: 0 // because this is the first Python sample.
 # Date Posted: Aug 31,2014
+#**************************************************************
 def function1(nums):
     l = len(nums)
     nums_l=nums #product_left_to_right 
@@ -17,12 +19,14 @@ def function1(nums):
         nums_l[i] *= (nums_l[i-1] or 1) #if meets 0 then restart in-place by itself.
         nums_r[i] *= (nums_r[i-1] or 1) 
     return max(max(nums_l), max(nums_r))
+
 print(function1([5, 1, 2, 2, 4, 3, 1, 2, 3, 1, 1, 5, 2]))
 
-
-# Problem: maximum product subarray
+#**************************************************************
+# Problem p10: maximum product subarray
 # Source: ChatGPT
 # prompt : "Maximum Product Subarray"
+#**************************************************************
 def function2(nums):
     if not nums:
         return 0
@@ -43,9 +47,10 @@ def function2(nums):
         result = max(result, max_product)
             
     return result
+
 print(function2([5, 1, 2, 2, 4, 3, 1, 2, 3, 1, 1, 5, 2]))
 
-
+#**************************************************************
 sizes = [2, 3, 4]
 versions = 100
 

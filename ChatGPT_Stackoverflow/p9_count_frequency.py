@@ -3,21 +3,25 @@ import statistics
 import timeit
 import csv
 
-# Problem: Count frequency
+#**************************************************************
+# Problem p9: Count frequency
 # Source: Stack Overflow
 # Title: "How to count the frequency of the elements in an unordered list?"
 # URL: https://stackoverflow.com/questions/2161752/how-to-count-the-frequency-of-the-elements-in-an-unordered-list
 # Voted Answer: 634
 # Date Posted: Jan 29,2010
+#**************************************************************
 import collections
 def function1(a):
     return(collections.Counter(a))
+
 print(function1([5, 1, 2, 2, 4, 3, 1, 2, 3, 1, 1, 5, 2]))
 
-
-# Problem: Count frequency
+#**************************************************************
+# Problem p9: Count frequency
 # Source: ChatGPT
 # prompt : "How to count the frequency of the elements in an unordered list?"
+#**************************************************************
 def function2(my_list):
     # Create an empty dictionary to store the counts
     counts = {}
@@ -31,9 +35,10 @@ def function2(my_list):
         else:
             counts[elem] = 1
     return counts
+
 print(function2([5, 1, 2, 2, 4, 3, 1, 2, 3, 1, 1, 5, 2]))
 
-
+#**************************************************************
 sizes = [1000, 10000, 1000000]
 versions = 100
 

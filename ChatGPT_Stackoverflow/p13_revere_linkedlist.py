@@ -3,17 +3,20 @@ import statistics
 import timeit
 import csv
 
-class Node:
-    def __init__(self, val):
-        self.val = val
-        self.next = None
-
-# Problem: Reversing a linked list 
+#**************************************************************
+# Problem p13: Reversing a linked list 
 # Source: Stack Overflow
 # Title: "Reversing a linked list in python"
 # URL: https://stackoverflow.com/questions/21529359/reversing-a-linked-list-in-python
 # Voted Answer: 56
 # Date Posted: Feb 3,2014
+#**************************************************************
+class Node:
+    def __init__(self, val):
+        self.val = val
+        self.next = None
+
+#**************************************************************
 def function1(head):
     new_head = None
     while head:
@@ -42,10 +45,11 @@ while current_node is not None:
     print(current_node.val, end=" ")
     current_node = current_node.next
 
-
-# Problem: Reversing a linked list
+#**************************************************************
+# Problem p13: Reversing a linked list
 # Source: ChatGPT
 # prompt : "Reversing a linked list in python"
+#**************************************************************
 def function2(head):
     prev = None
     curr = head
@@ -80,6 +84,7 @@ while current_node is not None:
     print(current_node.val, end=" ")
     current_node = current_node.next
 
+#**************************************************************
 sizes = [1000, 10000, 1000000]
 versions = 100
 

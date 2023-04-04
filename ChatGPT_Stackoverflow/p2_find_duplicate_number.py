@@ -3,21 +3,24 @@ import statistics
 import timeit
 import csv
 
-# Problem: find duplicate
+#**************************************************************
+# Problem P2: find duplicate
 # Source: Stack Overflow
 # Title: "Find the Duplicate Number"
 # URL: https://stackoverflow.com/questions/40167364/find-the-duplicate-number
 # Voted Answer: 2
 # Date Posted: Oct 16,2012
+#**************************************************************
 def function1(arr):
     n = len(arr) - 1                     # Get n as length of list - 1
     return sum(arr) - (n * (n + 1) / 2)  # n*(n+1)/2 is the sum of integers from 1 to n
 print(function1([1,2,3,4,4,5,6,7,8,9]))
 
-
-# Problem: find duplicate
+#**************************************************************
+# Problem P2: find duplicate
 # Source: ChatGPT
 # prompt : "Find the Duplicate Number"
+#**************************************************************
 def function2(nums):
     slow = fast = nums[0]
     while True:
@@ -33,7 +36,7 @@ def function2(nums):
     
     return slow
 print(function2([1,2,3,4,4,5,6,7,8,9]))
-
+#**************************************************************
 
 sizes = [1000, 10000, 1000000]
 versions = 100
