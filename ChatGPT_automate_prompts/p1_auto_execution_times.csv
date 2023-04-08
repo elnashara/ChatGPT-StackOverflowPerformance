@@ -1,0 +1,7 @@
+Size,Function,Min,Average,Max
+1000,p1_auto_find_missing_number_strategy_chatgpt_prompts1,0.0002767,0.000299597,0.0004816
+1000,p1_auto_find_missing_number_strategy_chatgpt_prompts2,0.0002782,0.000298491,0.0005022
+10000,p1_auto_find_missing_number_strategy_chatgpt_prompts1,0.0026566,0.002859006,0.0031321
+10000,p1_auto_find_missing_number_strategy_chatgpt_prompts2,0.0026752,0.002854279,0.0032117
+1000000,p1_auto_find_missing_number_strategy_chatgpt_prompts1,4.2926662,4.554700208,5.7875485
+1000000,p1_auto_find_missing_number_strategy_chatgpt_prompts2,4.3017602,4.576276604,6.3173165

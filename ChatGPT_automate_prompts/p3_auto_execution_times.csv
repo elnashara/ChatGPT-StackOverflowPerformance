@@ -1,0 +1,7 @@
+Size,Function,Min,Average,Max
+1000,p3_auto_find_n_smallest_number_strategy_chatgpt_prompts1,0.007849,0.008298896,0.0088071
+1000,p3_auto_find_n_smallest_number_strategy_chatgpt_prompts2,0.0061083,0.006391483,0.0073758
+10000,p3_auto_find_n_smallest_number_strategy_chatgpt_prompts1,0.09475,0.098996892,0.1057922
+10000,p3_auto_find_n_smallest_number_strategy_chatgpt_prompts2,0.0757306,0.081735183,0.0868025
+1000000,p3_auto_find_n_smallest_number_strategy_chatgpt_prompts1,35.4529761,36.76975663,40.4587805
+1000000,p3_auto_find_n_smallest_number_strategy_chatgpt_prompts2,28.7477008,29.75801087,32.6662771
