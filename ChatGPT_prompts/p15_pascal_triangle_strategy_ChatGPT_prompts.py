@@ -88,14 +88,6 @@ with open('p15_execution_times.csv', mode='a', newline='') as file:
         times3 = []
         print(f"Testing for list size {size}")
         for i in range(size):
-
-            # Generate a linked list with 1000000 random numbers with a range of 0 to size
-            head = Node(random.randint(0, 1000000))
-            current = head
-            for i in range(size):
-                current.next = Node(random.randint(0, 1000000))
-                current = current.next
-                
             if i % 3 == 0:
                 time1 = timeit.timeit(lambda: function1(i), number=100)
                 time2 = timeit.timeit(lambda: function2(i), number=100)
