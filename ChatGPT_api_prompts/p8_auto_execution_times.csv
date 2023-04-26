@@ -1,0 +1,7 @@
+Size,Function,Min,Average,Max
+1000,0_p8_auto_reverse_list_strategy,2.67E-05,0.031850725,0.1728411
+2000,0_p8_auto_reverse_list_strategy,4.68E-05,0.061227838,0.242517
+5000,0_p8_auto_reverse_list_strategy,0.0001105,0.15272666,0.6152903
+1000,1_p8_auto_reverse_list_strategy,0.000157,0.020625542,0.1202824
+2000,1_p8_auto_reverse_list_strategy,0.0003,0.041262824,0.2197485
+5000,1_p8_auto_reverse_list_strategy,0.000762,0.103366951,0.5400192
