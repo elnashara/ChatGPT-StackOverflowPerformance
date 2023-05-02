@@ -1,0 +1,13 @@
+Size,Function,Min,Average,Max
+1000,0_p4_auto_find_duplicates_list_strategy,0.0053718,0.008030896,0.0125549
+10000,0_p4_auto_find_duplicates_list_strategy,0.0636737,0.086675293,0.1292198
+100000,0_p4_auto_find_duplicates_list_strategy,0.9508208,1.274833233,1.7852861
+1000,1_p4_auto_find_duplicates_list_strategy,0.0055289,0.008402838,0.0136069
+10000,1_p4_auto_find_duplicates_list_strategy,0.0639393,0.090113849,0.1398798
+100000,1_p4_auto_find_duplicates_list_strategy,0.9382196,1.337495149,1.8399981
+1000,2_p4_auto_find_duplicates_list_strategy,0.0051108,0.007413474,0.0105636
+10000,2_p4_auto_find_duplicates_list_strategy,0.0610122,0.080917755,0.1046554
+100000,2_p4_auto_find_duplicates_list_strategy,0.9211063,1.211640069,1.5189216
+1000,3_p4_auto_find_duplicates_list_strategy,0.0054973,0.007627468,0.0119319
+10000,3_p4_auto_find_duplicates_list_strategy,0.0634322,0.082672087,0.1268547
+100000,3_p4_auto_find_duplicates_list_strategy,0.9304671,1.207741573,2.1786049

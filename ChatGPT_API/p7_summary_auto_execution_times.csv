@@ -1,0 +1,13 @@
+Size,Function,Min,Average,Max
+1000,0_p7_auto_quicksort_strategy_ChatGPT_prompts,0.0399275,0.07299799,0.1050012
+5000,0_p7_auto_quicksort_strategy_ChatGPT_prompts,0.2595638,0.436965836,0.632768
+10000,0_p7_auto_quicksort_strategy_ChatGPT_prompts,0.5671177,0.933398957,1.6461072
+1000,1_p7_auto_quicksort_strategy_ChatGPT_prompts,0.0437985,0.060835538,0.1045657
+5000,1_p7_auto_quicksort_strategy_ChatGPT_prompts,0.278297,0.36919099,0.6022448
+10000,1_p7_auto_quicksort_strategy_ChatGPT_prompts,0.60311,0.799525771,1.4902068
+1000,2_p7_auto_quicksort_strategy_ChatGPT_prompts,0.0436815,0.078001611,0.127784
+5000,2_p7_auto_quicksort_strategy_ChatGPT_prompts,0.2900803,0.46064096,0.634136
+10000,2_p7_auto_quicksort_strategy_ChatGPT_prompts,0.6144562,0.982862744,1.2822803
+1000,3_p7_auto_quicksort_strategy_ChatGPT_prompts,0.0443061,0.073763906,0.10525
+5000,3_p7_auto_quicksort_strategy_ChatGPT_prompts,0.2787008,0.439874905,0.5894978
+10000,3_p7_auto_quicksort_strategy_ChatGPT_prompts,0.5982144,0.939341588,1.2696883
