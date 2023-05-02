@@ -6,36 +6,6 @@ import configparser
 
 dir = os.path.dirname(__file__)
 
-
-
-# ###############################
-
-
-# directory = f'{dir}/data/'  # Replace with your desired directory path
-
-# for filename in os.listdir(directory):
-#     if '.0_' in filename or '.1_' in filename:
-#         print(os.path.join(directory, filename))
-#         f = open(os.path.join(directory, filename), "r")
-#         data = f.read()
-#         # print(data)
-
-#         filename = os.path.join(directory, f'{filename}')
-#         # Store the generated code in a file named after the first human message
-#         with open(filename, "w") as file:
-#             file.write(data.replace("funcImp1","funcImp").replace("funcImp2","funcImp"))
-        
-
-
-
-# new_dir_name = 'data'
-# dir = pathlib.Path(dir, new_dir_name)
-# # os.mkdir(dir, exist_ok=True)
-# os.makedirs(dir, exist_ok=True)
-
-
-# #############################
-
 # Create a ConfigParser object
 config = configparser.ConfigParser()
 # Read the config file
@@ -47,14 +17,14 @@ settings = config['Settings']
 human_message_list = []
 # Loop through all the properties and print their names and values
 for name, value in settings.items():
-    if name.strip().endswith('3') or name.strip().endswith('4'):
+    # if name.strip().endswith('3') or name.strip().endswith('4'):
     # if name.strip().startswith('prompt_8'):
-        print(f"name: {name}, value: {value} ")
-        human_message = {
-            'name': name,
-            'value': value
-        }
-        human_message_list.append(human_message)
+    print(f"name: {name}, value: {value} ")
+    human_message = {
+        'name': name,
+        'value': value
+    }
+    human_message_list.append(human_message)
 
 # Create a file named 'api_key' and provide your private API key from the link provided: (https://platform.openai.com/account/api-keys)
 f = open(os.path.join(dir,"api_key"), "r")
